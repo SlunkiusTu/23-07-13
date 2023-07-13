@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  font-family: "Bona Nova", serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Rufina", serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+select {
+  border: none;
+  font-family: "Bona Nova", serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Rufina", serif;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.section1 {
+  margin-top: 5rem;
+}
+
+.logo {
+  padding-right: 2rem;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid rgba(128, 128, 128, 0.226);
+}
+
+.navbarContainer nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+  align-items: center;
+}
+
+.login {
+  padding: 12px 24px;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+}
+
+.apply {
+  padding: 12px 24px;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  margin-right: 2rem;
+  cursor: pointer;
+  border: none;
+}
+
+/* section */
+
+.sectionContainer {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background-color: #6eeb9d;
+  margin-left: 2.5rem;
+  margin-right: 2rem;
+  height: 34rem;
+}
+
+.text {
+  width: 26rem;
+}
+
+.text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.text p {
+  font-size: 1.125em;
+  line-height: 1.55em;
+  animation-duration: 2s;
+  animation-name: driveInP;
+}
+
+@keyframes driveInP {
+  from {
+    margin-left: 100%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.phone {
+  display: flex;
+  align-self: flex-end;
+  animation: photo ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes photo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* section 2 */
+
+.section2 {
+  margin-top: 2rem;
+  margin-left: 2.5rem;
+  margin-right: 2rem;
+}
+
+.boxContainer {
+  display: flex;
+
+  gap: 2rem;
+}
+
+.yellow {
+  background-color: #fff67f;
+  width: 60%;
+  height: 50rem;
+}
+
+.paymentImg {
+  height: 25rem;
+  width: 25rem;
+}
+
+.box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box h1 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.box p {
+  text-align: center;
+}
+
+.blue {
+  background-color: #acf8f5;
+  width: 40%;
+  height: 50rem;
+}
+
+.tabs {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.tabs h1 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.tabs p {
+  text-align: center;
+}
+
+.tabsImg {
+  width: 20rem;
+  height: 10rem;
+}
